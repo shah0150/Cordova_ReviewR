@@ -1,0 +1,81 @@
+<html>
+            <head>
+                
+                <meta name="format-detection" content="telephone=no">
+                <meta name="msapplication-tap-highlight" content="no">
+                <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+                <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+                  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" media="all" />
+                <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
+                 
+                <title>Review&#1071; App</title>
+            </head>
+            <body>
+               
+                     <section data-role="page" id="listreview" class="inactive-page">
+                    <header>
+                        <h2>Adesh-Review&#1071;</h2>
+                        <h3>Home Page</h3><br/>
+                    </header>
+                          <div class="wrapper">
+                       <ul>    
+                       </ul>
+                       
+                         </div>
+                         <button class="btnfab" id="btnfab" data-href="writereview">+</button>
+                     </section>
+
+                     <section data-role="page" id="writereview" class="inactive-page">
+                    <header>
+                        
+                        <h2><i class="fa fa-chevron-circle-left back"></i>Review&#1071;</h2>
+                        <h3 class="head">Add Review</h3>
+                    </header>
+                         <div class="wrapper">
+                         <form id="form1">
+                            <input type="text" placeholder="title" id="title"><br/>
+                            <textarea placeholder="review" id="review"></textarea><br/>
+                            <span class="star-rating">  
+                                <input type="radio" name="rating" value="1"><i></i>  
+                                <input type="radio" name="rating" value="2"><i></i>  
+                                <input type="radio" name="rating" value="3"><i></i>   
+                                <input type="radio" name="rating" value="4"><i></i>  
+                                <input type="radio" name="rating" value="5"><i></i>
+                              </span><br/>
+                             
+                             <i class="fa fa-camera" id="camera"></i><br/>
+                             <img id="dispimg" /><br/>
+                             <i class="fa fa-times-circle" id="close"></i>
+                             <i class="fa fa-check-circle" id="check"></i>
+                        </form>
+                             </div>
+                    </section>
+                        
+                    
+                    <section data-role="page" id="readreview">
+                    <header>
+                        <h2><i class="fa fa-chevron-circle-left back1"></i>Review&#1071;</h2>
+                        <h3 class="head">Review Details</h3>
+                    </header>
+                        <div class="wrapper">
+                        <div class="content"> 
+                        <label placeholder="title" id="fetchedtitle"></label><br/>
+                        <textarea readonly id="fetchedreview"></textarea><br/>
+                        <img id="displayimg" height=100 width=100/> <br/>
+                        <div id="displayrate"></div>
+                        <i class="fa fa-check-circle" id="checkreview"></i>
+                       </div>
+                            </div>
+                    </section>
+                    <footer id="footer">
+    <div>
+      <span>&copy; Adesh Shah</span>
+    </div>
+  </footer>
+                 
+            </body>
+            <script type="text/javascript" src="cordova.js"></script>
+                <script type="text/javascript" src="js/main.js"></script>
+                <script src="js/hammer.min.js"></script>
+        </html>
